@@ -1,15 +1,16 @@
 :root{
     color: #bab3b7;
     color: #686868;
-    --details: #000000;
-    --details2:#0a0324;
-    --colorHoverd1: #ff0088;
+    --details: #e580b67a;
+    --details2:#e580b6;
+    --colorHoverd1: #ab5a86;
     color: #BF3B5A;
     color: #5E4169;
     color: #3c466b;
     color: black;
     --complementary: #272624;
     --headerBackgroundColor: #000000;
+    --footerBackgroundColor: #e580b6;
     --backgroundColor: #000000;
     --blackOpacityreduced: rgba(0, 0, 0, 0.85);
     --featuresBackground: white;
@@ -605,7 +606,7 @@ footer{
 }
 .footer{
     width: 100%;
-    background-color: var(--headerBackgroundColor);;
+    background-color: var(--footerBackgroundColor);;
 }
 .footer img{
     width: 260px
@@ -674,7 +675,7 @@ footer{
 } 
 
 .footer .footer-group-2 {
-    background-color: var(--details);
+    background-color: var(--colorHoverd1);
     padding: 15px 10px;
     text-align: center;
     color: white;
@@ -967,5 +968,66 @@ form button{
 .portfolio-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+
 }
 
+.portfolio-container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.portfolio-container .heading h2{
+    font-size: 3em;
+    font-weight: bolder;
+    border-bottom: 3px solid white;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.portfolio-container .heading h2 span{
+    font-weight: 1;
+    color: white;
+}
+
+.portfolio-container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.portfolio-container .box .portfolio-images{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.portfolio-container .box .portfolio-images img{
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px; /*esto no claro*/
+}
+
+@media only screen and (max-width: 769px){
+    .portfolio-container .box{
+        flex-direction: column;
+    }
+
+    .portfolio-container .box .portfolio-images{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 643px){
+    .portfolio-container .heading{
+        width: 100%;
+    }
+    
+    .portfolio-container .heading h2{
+        font-size: 2em;
+    }
+}
