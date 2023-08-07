@@ -380,10 +380,10 @@ input{
     text-decoration: none;
 }
 .section-s{
-    /*padding-top: 4%;
-    padding-bottom: 4%;*/
+    padding-top: 4%;
+    padding-bottom: 4%;
     
-    height:max-content;
+    height:fit-content;
 
     display: flex; 
     justify-content:space-arround;
@@ -816,9 +816,8 @@ main.features-container{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
     width: 32%;
-    height: 80%;
+    height: 100%;
     background-color: var(--blackOpacityreduced);
     margin: 0;
     padding: 5%;
@@ -971,7 +970,7 @@ form button{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 40px 20px 0 20px;
+    margin: 0px 20px 0 20px;
 
 }
 
@@ -1029,5 +1028,45 @@ form button{
     
     .portfolio-container .heading h2{
         font-size: 2em;
+    }
+}
+
+
+#description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#description img{
+    max-width: 70%;
+   width: 50%;
+}
+
+.wrapper{
+    margin: 5%;
+    width: 70%
+}
+
+.text-box {
+    color: white;
+}
+
+.text-box h2{
+    font-size: 42px;
+}
+
+.text-box h3{
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 769px){
+    #description{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #description img{
+        width: 70%;
     }
 }
