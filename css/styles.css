@@ -800,7 +800,7 @@ main.features-container{
 
 .special-name{
     font-family: MerriweatherThin;
-    color: #ff0088;
+    color: var(--details2);
 }
 
 .to-right{
@@ -1040,7 +1040,7 @@ form button{
 
 #description img{
     max-width: 70%;
-   width: 50%;
+    width: 40%;
 }
 
 .wrapper{
@@ -1060,7 +1060,7 @@ form button{
     font-size: 16px;
 }
 
-@media only screen and (max-width: 769px){
+@media only screen and (max-width: 1024px){
     #description{
         display: flex;
         flex-direction: column;
